@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.music-container{
+    width: 35rem;
+    height: 55rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 7rem 0.5rem black;
+    padding: 3rem;
+    text-align: center;
+}
+.music-container #title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: black;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgb(21, 19, 19);
+}
+
+.music-container #artist{
+    color: #cccaca;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.img-container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem black;
+}  
+.music_controls{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 5px;
+
+}
+.music_controls .fa-solid{
+    color: black;
+    font-size: 4rem;
+    cursor: pointer;
+    /* margin: 1rem;
+    margin-top: 4rem; */
+    filter: drop-shadow(1 1.2rem 3rem 0.5rem black);
+} 
+
+.music_controls .main_button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:black;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music_controls .fa-solid:hover{
+    color: gray;
+
+}
+.music_controls .fa-play:hover{
+    background-color: #f6f6f6;
+    color: black;
+    box-shadow: 0 1rem 1rem 0.2rem black ;
+}
+
+
+.anime{
+    animation: rotatePlayer 3s linear infinite; 
+}
+ 
+@keyframes rotatePlayer {
+    from{
+        transform: rotate(0deg);
+    }
+}to {
+    transform: rotate(360deg);
+    
+}
+
+ 
